@@ -37,6 +37,7 @@ public:
 
     RankId m_competitiveRank{ RankNone };
     int m_competitiveWins{ 0 };
+int m_primeStatus{ 1 };
     RankId m_wingmanRank{ RankNone };
     int m_wingmanWins{ 0 };
     DangerZoneRankId m_dangerZoneRank{ DangerZoneRankNone };
