@@ -1249,4 +1249,5 @@ const char *MessageName(uint32_t type)
     static thread_local char buffer[16];
     snprintf(buffer, sizeof(buffer), "%u", type);
     return buffer;
-}
+} 
+
