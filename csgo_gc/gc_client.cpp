@@ -403,6 +403,7 @@ void ClientGC::BuildMatchmakingHello(CMsgGCCStrike15_v2_MatchmakingGC2ClientHell
     message.mutable_ranking()->set_account_id(AccountId());
     message.mutable_ranking()->set_rank_id(GetConfig().m_competitiveRank);
     message.mutable_ranking()->set_wins(GetConfig().m_competitiveWins);
+    message.mutable_ranking()->set_account_status(GetConfig().m_primeStatus);
 
     message.mutable_commendation()->set_cmd_friendly(GetConfig().m_commendedFriendly);
     message.mutable_commendation()->set_cmd_teaching(GetConfig().m_commendedTeaching);
