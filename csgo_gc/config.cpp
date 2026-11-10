@@ -27,6 +27,7 @@ void GCConfig::Load()
     const KeyValue &config = configRead.Root();
 
     m_logOutput = config.GetNumber("log_output", m_logOutput);
+    m_primeStatus = config.GetNumber("prime_status", m_primeStatus);
 
     m_appIdOverride = config.GetNumber("appid_override", m_appIdOverride);
     m_showCsgoGCServersOnly = config.GetNumber("show_csgo_gc_servers_only", m_showCsgoGCServersOnly);
